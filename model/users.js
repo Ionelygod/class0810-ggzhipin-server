@@ -16,7 +16,12 @@ const usersSchema = new mongoose.Schema({
   type:{
     type:String,
     require:true,
-  }
+  },
+  header:String,
+  post:String,
+  company:String,
+  salary:String,
+  info:String
 });
 
 module.exports = mongoose.model('Users', usersSchema)
